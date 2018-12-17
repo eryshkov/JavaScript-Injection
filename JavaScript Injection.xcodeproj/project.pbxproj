@@ -12,7 +12,6 @@
 		5C626AF421C8029A00E2A042 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C626AF221C8029A00E2A042 /* Main.storyboard */; };
 		5C626AF621C8029B00E2A042 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C626AF521C8029B00E2A042 /* Assets.xcassets */; };
 		5C626AF921C8029B00E2A042 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C626AF721C8029B00E2A042 /* LaunchScreen.storyboard */; };
-		5C626B0721C8058300E2A042 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C626B0621C8058300E2A042 /* Media.xcassets */; };
 		5C626B0921C8058300E2A042 /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C626B0821C8058300E2A042 /* ActionViewController.swift */; };
 		5C626B0C21C8058300E2A042 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C626B0A21C8058300E2A042 /* MainInterface.storyboard */; };
 		5C626B1021C8058300E2A042 /* Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5C626B0421C8058300E2A042 /* Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -212,7 +211,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C626B1621C822E400E2A042 /* Action.js in Resources */,
-				5C626B0721C8058300E2A042 /* Media.xcassets in Resources */,
 				5C626B0C21C8058300E2A042 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,7 +434,7 @@
 		5C626B1221C8058300E2A042 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = Z256VMH9HM;
 				INFOPLIST_FILE = Extension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -446,6 +444,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dum22ns90.com1004.JavaScript-Injection.Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = 2in1;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -455,7 +454,7 @@
 		5C626B1321C8058300E2A042 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = Z256VMH9HM;
 				INFOPLIST_FILE = Extension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -465,6 +464,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dum22ns90.com1004.JavaScript-Injection.Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = 2in1;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
