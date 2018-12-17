@@ -12,16 +12,27 @@ import MobileCoreServices
 class ActionViewController: UIViewController {
     
     @IBOutlet weak var script: UITextView!
+    
+    var pageTitle = ""
+    var pageURL = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
     
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(done))
+        
         if let inputItem = extensionContext?.inputItems.first as? NSExtensionItem {
             if let itemProvider = inputItem.attachments?.first {
                 itemProvider.loadItem(forTypeIdentifier: kUTTypePropertyList as String, options: nil) {[unowned self] (dict, error) in
                     let itemDictionary = dict as! NSDictionary
                     let javaScriptValues = itemDictionary[NSExtensionJavaScriptPreprocessingResultsKey] as! NSDictionary
-                    print(javaScriptValues)
+                    
+                    self.pageTitle = javaScriptValues["title"] as! String
+                    self.pageURL = javaScriptValues["URL"] as! String
+                    
+                    DispatchQueue.main.async {
+                        self.title = self.pageTitle
+                    }
                 }
             }
         }
