@@ -10,8 +10,8 @@ import UIKit
 import MobileCoreServices
 
 class ActionViewController: UIViewController {
-
-    @IBOutlet weak var imageView: UIImageView!
+    
+    @IBOutlet weak var script: UITextView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +19,9 @@ class ActionViewController: UIViewController {
         if let inputItem = extensionContext?.inputItems.first as? NSExtensionItem {
             if let itemProvider = inputItem.attachments?.first {
                 itemProvider.loadItem(forTypeIdentifier: kUTTypePropertyList as String, options: nil) {[unowned self] (dict, error) in
-                    // do stuff
+                    let itemDictionary = dict as! NSDictionary
+                    let javaScriptValues = itemDictionary[NSExtensionJavaScriptPreprocessingResultsKey] as! NSDictionary
+                    print(javaScriptValues)
                 }
             }
         }
