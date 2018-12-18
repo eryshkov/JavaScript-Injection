@@ -17,7 +17,9 @@
 ## Main functionality
 * simple extension for mobile Safari
 * executes any JS code directly from extension
-* 
+* using `NotificationCenter`
+* `keyboardWillHideNotification` & `keyboardWillChangeFrameNotification`
+* auto scrolling `UITextView`
 
 ## License
 
