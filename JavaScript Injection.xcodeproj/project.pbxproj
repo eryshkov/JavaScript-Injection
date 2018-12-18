@@ -56,6 +56,10 @@
 		5C626B0B21C8058300E2A042 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		5C626B0D21C8058300E2A042 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C626B1521C822E400E2A042 /* Action.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Action.js; sourceTree = "<group>"; };
+		5C626B1721C8E32D00E2A042 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5C626B1921C8E59000E2A042 /* 2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpeg; sourceTree = "<group>"; };
+		5C626B1A21C8E59000E2A042 /* 3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpeg; sourceTree = "<group>"; };
+		5C626B1B21C8E59100E2A042 /* 1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 		5C626AE221C8029A00E2A042 = {
 			isa = PBXGroup;
 			children = (
+				5C626B1821C8E57C00E2A042 /* screens */,
+				5C626B1721C8E32D00E2A042 /* README.md */,
 				5C626AED21C8029A00E2A042 /* JavaScript Injection */,
 				5C626B0521C8058300E2A042 /* Extension */,
 				5C626AEC21C8029A00E2A042 /* Products */,
@@ -117,6 +123,16 @@
 				5C626B1521C822E400E2A042 /* Action.js */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		5C626B1821C8E57C00E2A042 /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				5C626B1B21C8E59100E2A042 /* 1.jpeg */,
+				5C626B1921C8E59000E2A042 /* 2.jpeg */,
+				5C626B1A21C8E59000E2A042 /* 3.jpeg */,
+			);
+			path = screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
